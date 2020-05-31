@@ -1,4 +1,4 @@
 FROM ubuntu
-RUN apt-get update
-RUN apt-get -y install nginx
-ENTRYPOINT service nginx start
+RUN sudo apt-get update
+RUN sudo apt-get -y install nginx
+ENTRYPOINT sudo service nginx start
